@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./*"],
+      "test/*": ["./test/*"]
+    },
+    "types": [
+      "node",
+      "@wdio/sync",
+      "chai",
+      "@wdio/cucumber-framework"
+    ],
+    "target": "es6",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "outDir": "build"
+  }, 
+  // "include": ["./test/**/*.ts", "test/config/wdio.conf.js"]
+}
