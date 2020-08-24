@@ -1,5 +1,5 @@
 {
-    "name": "webdriverio_github_actions",
+    "name": "webdriverio_browserstack_cucumber",
     "version": "1.0.0",
     "description": "WebdriverIO integration with Cucumber Framework and Browserstack using Typescript programming language",
     "scripts": {
