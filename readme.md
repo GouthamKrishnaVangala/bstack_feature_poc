@@ -6,8 +6,6 @@ To reproduce the issue:
 
 3. Add "user" and "key" in bstack.suite.conf.ts to connect to browserstack cloud
 
-4. To Build the js files  Run-- "tsc" (if typescript is globally installed) or "node_modules\.bin\tsc"
+4. Run -- npm run bstack
 
-5. Run -- npm run bstack
-
-6. Verify the results in Browserstack site.
+5. Verify the results in Browserstack site.
