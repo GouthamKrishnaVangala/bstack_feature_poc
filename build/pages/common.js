@@ -6,6 +6,7 @@ class Commmon {
         browser.url(homepage);
         browser.maximizeWindow();
         browser.pause(2000);
+        expect(browser).toHaveTitle('bstack');
     }
 }
 exports.default = new Commmon;

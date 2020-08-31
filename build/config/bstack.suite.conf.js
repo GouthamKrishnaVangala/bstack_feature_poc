@@ -8,8 +8,8 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: "local",
-    user: 'username',
-    key: 'key',
+    user: 'goutham52',
+    key: 'ystpCUM8eyggy2VhwZVK',
     //
     // Override default path ('/wd/hub') for chromedriver service.
     // path: "/wd/hub",
@@ -53,8 +53,8 @@ exports.config = {
     commonCapabilities: {
         "resolution": "1920x1080",
         "name": "Browserstack config name",
-        "build": "Browserstack config name",
-        "browserstack.selenium_version": "4.0.0-alpha-6",
+        "build": "Browserstack build name",
+        "browserstack.selenium_version": "3.6.0",
     },
     capabilities: [
         /* {
