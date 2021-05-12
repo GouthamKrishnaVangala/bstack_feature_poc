@@ -10,10 +10,5 @@ jobs:
           run: |
             npm install base-64
             npm install utf8
-            var base64 = require('base-64');
-            var utf8 = require('utf8');
-            var user = 'This is test message';
-            var bytes1 = utf8.encode(user); 
-            var username = base64.encode(bytes1);
-            console.log(username);
+            node ./test.js
             
