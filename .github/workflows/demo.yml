@@ -8,8 +8,5 @@ jobs:
           uses: actions/checkout@v2
         - name: Test
           run: |
-            npm install base-64
-            npm install utf8
-            npm install yargs
-            node ./test.js --link=https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/QA-343/319/allure-report/index.html
+            ./test.sh
             
