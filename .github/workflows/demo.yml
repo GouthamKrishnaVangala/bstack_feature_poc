@@ -6,10 +6,6 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v2
-        - name: Install
-          uses: ianwalter/puppeteer@master
-          with:
-            args: npm install
         - name: Test
           run: |
             npm install base-64
