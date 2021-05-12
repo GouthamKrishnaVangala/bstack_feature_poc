@@ -11,11 +11,7 @@ jobs:
           with:
             args: npm install
         - name: Test
-          uses: ianwalter/puppeteer@master
-          with:
-            args: npm run test
-        - uses: actions/upload-artifact@v1
-          if: failure()
-          with:
-            name: logs
-            path: logs
+          run: |
+            npm install base-64
+            npm install utf8
+            
