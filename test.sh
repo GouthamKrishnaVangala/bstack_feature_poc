@@ -3,7 +3,7 @@
 npm install base-64
 npm install utf8
 npm install yargs
-encode = $(node ./test.js --link=https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/QA-343/319/allure-report/index.html)
+node ./test.js --link=https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/QA-343/319/allure-report/index.html
 
 echo "$encode"
 
