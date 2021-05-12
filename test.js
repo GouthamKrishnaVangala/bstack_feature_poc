@@ -10,7 +10,7 @@ utf8 = require('utf8');
  
 // localStorage.setItem("jiraEncoded", jiraEncoded);
 
-var user = 'This is test message';
+var user = '<p align="center">\n  <a href="https://store.mosaiq.one/" target="_blank">\n      <img alt="mosaiq" src="https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/badge/mosaiq-store-logo.png" width="150">\n  </a>\n</p>\n\n# Mosaiq IDE Test Automation Status\n<p align="center">\n  <a href="https://github.com/mosaiqone/ide-test-automation/actions?query=workflow%3Amosaiq-ide-test-automation">\n    <img alt="Overall Test Automation Status" src="https://github.com/mosaiqone/ide-test-automation/workflows/mosaiq-ide-test-automation/badge.svg"></a>\n\n  <a href="https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/allure-report/index.html" target="_blank">\n    <img alt="Functional Test Status" src="https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/badge/functionalTest.svg"></a>\n\n  <a href="https://github.com/mosaiqone/ide-test-automation">\n    <img alt="Performance Test Status" src="https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/badge/performanceTest.svg"></a>\n\n  <a href="https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/uiReports/report.html">\n    <img alt="Ui Responsiveness Test Status" src="https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/badge/UiResponsiveTest.svg"></a>\n</p>';
 var bytes1 = utf8.encode(user); 
 var username = base64.encode(bytes1);
 console.log(username)
