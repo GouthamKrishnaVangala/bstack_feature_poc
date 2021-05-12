@@ -10,5 +10,5 @@ jobs:
           run: |
             npm install base-64
             npm install utf8
-            node ./test.js
+            node ./test.js '{url:"https://mosaiq-ide-test-automation.s3.amazonaws.com/ide-test-automation/reports/QA-343/319/allure-report/index.html"}'
             
