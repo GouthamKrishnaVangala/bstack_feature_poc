@@ -9,6 +9,7 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN  }}
   SHA: ${{github.sha}}
+  STORY_ID: ${{ github.event.inputs.STORY_ID }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,5 +18,5 @@ jobs:
       uses: actions/checkout@v2
     - name: Test
       run: |
-        sh ./test.sh QA-343 ${{ env.GITHUB_TOKEN }} ${{ env.SHA }}
+        sh ./test.sh ${{ env.STORY_ID }} ${{ env.GITHUB_TOKEN }} ${{ env.SHA }}
             
