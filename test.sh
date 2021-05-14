@@ -1,5 +1,7 @@
 #!/bin/bash
 
+npm install json
+
 URL="https://api.github.com/repos/GouthamKrishnaVangala/bstack_feature_poc/contents/readme.md"
 # store the whole response with the status at the and
 HTTP_RESPONSE=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" -X GET $URL)
