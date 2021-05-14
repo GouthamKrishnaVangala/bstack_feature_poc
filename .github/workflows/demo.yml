@@ -1,13 +1,21 @@
 name: CI
 on:
   workflow_dispatch:
+    inputs:
+      STORY_ID:
+        description: 'Test'
+        required: true
+        default: 'QA-343'
+env:
+  GITHUB_TOKEN: ${{ secrets.TOKEN  }}
+  SHA: ${{github.sha}}
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - name: Test
-          run: |
-            sh ./test.sh
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Test
+      run: |
+        sh ./test.sh QA-343 ${{ env.GITHUB_TOKEN }} ${{ env.SHA }}
             
