@@ -8,8 +8,9 @@ on:
         default: 'QA-343'
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN  }}
-  SHA: ${{github.sha}}
+  SHA: ${{ github.sha }}
   STORY_ID: ${{ github.event.inputs.STORY_ID }}
+  GITHUB_RUNNER: ${{ github.run_number }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,5 +20,5 @@ jobs:
     - name: Test
       if: ${{ always() }}
       run: |
-        sh ./test.sh ${{ env.STORY_ID }} ${{ env.GITHUB_TOKEN }}
+        sh ./test.sh ${{ env.STORY_ID }} ${{ env.GITHUB_RUNNER }} ${{ env.GITHUB_TOKEN }}
             
