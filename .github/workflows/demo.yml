@@ -19,5 +19,5 @@ jobs:
     - name: Test
       if: ${{ always() }}
       run: |
-        sh ./test.sh ${{ env.STORY_ID }} ${{ env.GITHUB_TOKEN }} ${{ env.SHA }}
+        sh ./test.sh ${{ env.STORY_ID }} ${{ env.GITHUB_TOKEN }}
             
